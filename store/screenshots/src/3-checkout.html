@@ -1,0 +1,57 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="shared.css">
+<style>
+  .left { position: absolute; left: 72px; top: 110px; width: 440px; }
+  .right { position: absolute; left: 560px; top: 84px; width: 650px; }
+  .co { padding: 26px 30px; }
+  .co h2 { font-size: 24px; font-weight: 600; margin-bottom: 18px; }
+  .banner {
+    display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 10px;
+    background: var(--green-soft); color: var(--green-dark); font-size: 16px; font-weight: 600; margin-bottom: 20px;
+  }
+  .banner img { width: 26px; height: 26px; }
+  .item { display: flex; gap: 18px; align-items: center; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+  .mini { width: 62px; height: 92px; border-radius: 10px; background: #f3f5f7; display: flex; align-items: center; justify-content: center; }
+  .mini .phone { width: 36px; height: 72px; border-radius: 8px; padding: 3px; }
+  .mini .phone .screen { border-radius: 6px; }
+  .line { display: flex; justify-content: space-between; font-size: 18px; padding: 10px 0; }
+  .line.total { font-size: 24px; font-weight: 700; border-top: 1px solid var(--line); margin-top: 6px; padding-top: 16px; color: var(--red); }
+  .place { margin-top: 20px; text-align: center; background: #ffd814; border-radius: 22px; padding: 12px; font-weight: 600; font-size: 17px; }
+  .compare { display: grid; gap: 14px; margin-top: 34px; }
+  .compare div { display: flex; justify-content: space-between; align-items: center; background: #fff; border-radius: 12px; padding: 16px 20px; font-size: 18px; box-shadow: 0 4px 14px rgba(31,77,55,.08); }
+  .compare b { font-size: 24px; }
+</style></head>
+<body><div class="page">
+  <div class="left">
+    <div class="brand"><img src="../../../icons/icon128.png" alt="">Price Softener</div>
+    <h1 style="font-size:46px">Honest where it matters: <em>you pay the real price.</em></h1>
+    <p class="lead">Checkout, address and payment pages always show the actual amount. This can't be switched off.</p>
+    <div class="compare">
+      <div><span>Product page shows</span><b style="color:var(--green)">₹73,999</b></div>
+      <div><span>Checkout shows &amp; you pay</span><b style="color:var(--red)">₹1,29,999</b></div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="browser">
+      <div class="chrome-bar">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <div class="url">demostore.in/checkout/payment</div>
+        <img class="ext-icon" src="../../../icons/icon32.png" alt="">
+      </div>
+      <div class="co">
+        <h2>Order summary</h2>
+        <div class="banner"><img src="../../../icons/icon32.png" alt="">Price Softener is paused here: these are the real prices</div>
+        <div class="item">
+          <div class="mini"><div class="phone"><div class="screen"></div></div></div>
+          <div style="flex:1"><div style="font-size:18px;font-weight:600">Nova X5 5G Smartphone (12 GB RAM, 256 GB)</div><div style="color:var(--muted);margin-top:4px">Qty: 1</div></div>
+          <div style="font-size:20px;font-weight:600">₹1,29,999.00</div>
+        </div>
+        <div class="line"><span>Items</span><span>₹1,29,999.00</span></div>
+        <div class="line"><span>Delivery</span><span style="color:var(--green)">FREE</span></div>
+        <div class="line total"><span>Order total</span><span>₹1,29,999.00</span></div>
+        <div class="place">Place your order</div>
+      </div>
+    </div>
+  </div>
+</div></body></html>

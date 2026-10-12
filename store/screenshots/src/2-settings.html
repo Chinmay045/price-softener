@@ -1,0 +1,48 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="shared.css">
+<style>
+  .left { position: absolute; left: 72px; top: 120px; width: 470px; }
+  .stage { position: absolute; left: 650px; top: 175px; }
+  .popup { width: 440px; padding: 24px 26px; font-size: 18px; transform-origin: top left; }
+  .popup h3 { font-size: 22px; }
+  .popup h3 img { width: 28px; height: 28px; }
+  .toggle { width: 52px; height: 30px; border-radius: 15px; }
+  .toggle::after { width: 24px; height: 24px; }
+  .preview { font-size: 24px; padding: 16px; }
+  .check i { width: 20px; height: 20px; }
+  .check i::after { left: 6px; top: 2px; width: 5px; height: 11px; }
+  .check { margin-bottom: 12px; }
+  .num { width: 96px; font-size: 18px; }
+  .popup .note { font-size: 15px; }
+  kbd { font-size: 13px; }
+  ul { list-style: none; margin-top: 36px; display: grid; gap: 22px; }
+  li { display: flex; gap: 16px; font-size: 20px; line-height: 1.4; }
+  li b { display: block; color: var(--ink); }
+  li span { color: var(--muted); font-size: 17px; }
+  .n { flex: none; width: 36px; height: 36px; border-radius: 50%; background: var(--green); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 17px; }
+</style></head>
+<body><div class="page">
+  <div class="left">
+    <div class="brand"><img src="../../../icons/icon128.png" alt="">Price Softener</div>
+    <h1 style="font-size:46px">You decide <em>how soft</em> the price looks.</h1>
+    <ul>
+      <li><div class="n">1</div><div><b>Choose 0–90% lower</b><span>Every open tab updates instantly.</span></div></li>
+      <li><div class="n">2</div><div><b>Natural-looking prices</b><span>Rounded to endings like ₹24,999.</span></div></li>
+      <li><div class="n">3</div><div><b>Small amounts untouched</b><span>Delivery fees and low prices stay real.</span></div></li>
+      <li><div class="n">4</div><div><b>Alt + Shift + H</b><span>Flip between soft and real in a second.</span></div></li>
+    </ul>
+  </div>
+
+  <div class="stage">
+    <div class="popup">
+      <header><h3><img src="../../../icons/icon32.png" alt="">Price Softener</h3><div class="toggle"></div></header>
+      <div class="row"><span>Show prices lower by</span><b>43%</b></div>
+      <div class="slider"><div class="fill" style="width:48%"></div><div class="knob" style="left:48%;width:22px;height:22px;top:-8px;transform:translateX(-11px)"></div></div>
+      <div class="preview"><s>₹1,29,999</s>→<b>₹73,999</b></div>
+      <div class="check"><i></i>Round to natural endings (e.g. 84,999)</div>
+      <div class="check"><i class="off"></i>Show real prices in the cart too</div>
+      <div class="row" style="margin-top:6px"><span>Only change prices above ₹</span><span class="num">1000</span></div>
+      <p class="note">Checkout and payment pages always show the <b>real</b> price. Shortcut: <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>H</kbd> switches it on/off.</p>
+    </div>
+  </div>
+</div></body></html>
