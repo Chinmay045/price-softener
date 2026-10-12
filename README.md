@@ -53,7 +53,7 @@ Prices in ₹, `Rs.` and `INR` formats are recognised, including Indian digit gr
 
 1. Download this repository: click **Code → Download ZIP** and unzip it, or run:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/price-softener.git
+   git clone https://github.com/Chinmay045/price-softener.git
    ```
 2. Open `chrome://extensions` in Chrome.
 3. Turn on **Developer mode** (top right).
