@@ -1,0 +1,87 @@
+* { box-sizing: border-box; }
+
+body {
+  width: 300px;
+  margin: 0;
+  padding: 14px 16px;
+  font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #1f2328;
+  background: #ffffff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+h1 { font-size: 15px; margin: 0; display: flex; align-items: center; gap: 6px; }
+
+.field { margin-bottom: 12px; }
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+input[type="range"] { width: 100%; margin-top: 6px; accent-color: #2f6f4f; }
+
+input[type="number"] {
+  width: 80px;
+  padding: 3px 6px;
+  border: 1px solid #c8ccd1;
+  border-radius: 4px;
+}
+
+.check { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; }
+.check input { accent-color: #2f6f4f; }
+
+.preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 12px;
+  background: #f3f6f4;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.preview .real { color: #6a737d; text-decoration: line-through; }
+.preview .soft { color: #2f6f4f; font-weight: 700; }
+.preview .arrow { color: #6a737d; }
+
+.note { margin: 0; font-size: 12px; color: #57606a; }
+kbd {
+  padding: 0 4px;
+  border: 1px solid #c8ccd1;
+  border-radius: 3px;
+  font-size: 11px;
+  background: #f6f8fa;
+}
+
+.switch { position: relative; width: 38px; height: 22px; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider {
+  position: absolute; inset: 0;
+  background: #c8ccd1;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: background .15s;
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  left: 3px; top: 3px;
+  width: 16px; height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform .15s;
+}
+.switch input:checked + .slider { background: #2f6f4f; }
+.switch input:checked + .slider::before { transform: translateX(16px); }
+
+body.off .preview, body.off .field { opacity: .45; }
