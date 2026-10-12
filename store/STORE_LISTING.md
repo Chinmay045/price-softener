@@ -18,7 +18,7 @@ Buying a new phone, TV or appliance for your parents or grandparents, and they h
 Price Softener lets you browse together without the price getting in the way. It shows a softened, lower price on product pages, only on your own screen, so the conversation stays about what they like rather than what it costs.
 
 HOW IT WORKS
-• Choose how much lower prices should look (0–60%)
+• Choose how much lower prices should look (0–90%)
 • Prices are rounded to natural endings like ₹24,999 so they look real
 • Small amounts such as delivery fees are left untouched
 • Switch it on/off instantly with Alt+Shift+H

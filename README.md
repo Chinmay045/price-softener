@@ -19,7 +19,7 @@ Price Softener lets you browse together while the conversation stays on what the
 
 ## Features
 
-- **Adjustable reduction**: show prices 0–60% lower using a slider
+- **Adjustable reduction**: show prices 0–90% lower using a slider
 - **Natural-looking prices**: rounded to believable endings, so ₹97,499 shows as ₹96,999
 - **Consistent discounts**: M.R.P. and savings amounts are lowered by the same percentage, so "13% off" still adds up
 - **Leaves small amounts alone**: delivery fees and prices below a limit you set (default ₹1,000) are not changed
@@ -76,7 +76,7 @@ Prices in ₹, `Rs.` and `INR` formats are recognised, including Indian digit gr
 | Setting | Default | What it does |
 |---|---|---|
 | On/off switch | On | Turns price softening on or off |
-| Show prices lower by | 25% | How much lower prices should look (0–60%) |
+| Show prices lower by | 25% | How much lower prices should look (0–90%) |
 | Round to natural endings | On | Rounds to prices like ₹24,999 or ₹1,499 |
 | Show real prices in the cart too | Off | Shows real prices on the cart page as well |
 | Only change prices above ₹ | 1,000 | Leaves smaller amounts untouched |
