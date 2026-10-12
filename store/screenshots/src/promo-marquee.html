@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="shared.css">
+<style>
+  html, body { width: 1400px; height: 560px; }
+  body { background: linear-gradient(120deg, #2f6f4f 0%, #1f4d37 60%, #183d2c 100%); color: #fff; }
+  .wrap { position: relative; width: 1400px; height: 560px; padding: 104px 80px; }
+  .brand { color: #fff; font-size: 26px; }
+  .brand img { width: 44px; height: 44px; border-radius: 10px; box-shadow: 0 0 0 2px rgba(255,255,255,.35); }
+  h1 { color: #fff; font-size: 58px; margin-top: 30px; max-width: 640px; }
+  h1 em { color: #bfe3cd; }
+  .lead { color: #cfe3d7; font-size: 22px; max-width: 600px; margin-top: 18px; }
+
+  .cards { position: absolute; right: 80px; top: 122px; width: 560px; }
+  .card { background: #fff; color: var(--ink); border-radius: 16px; padding: 22px 26px; box-shadow: 0 20px 50px rgba(0,0,0,.25); display: flex; gap: 22px; align-items: center; }
+  .card + .card { margin-top: 18px; }
+  .card .label { font-size: 16px; color: var(--muted); }
+  .card .amt { font-size: 40px; font-weight: 600; margin-top: 2px; }
+  .mini { flex: none; width: 76px; height: 110px; border-radius: 12px; background: #f3f5f7; display: flex; align-items: center; justify-content: center; }
+  .mini .phone { width: 44px; height: 88px; border-radius: 10px; padding: 3px; }
+  .mini .phone .screen { border-radius: 8px; }
+  .badge { margin-left: auto; padding: 8px 14px; border-radius: 999px; font-size: 15px; font-weight: 600; }
+  .badge.soft { background: var(--green-soft); color: var(--green-dark); }
+  .badge.real { background: #fdecea; color: var(--red); }
+  .ico { flex: none; width: 76px; height: 76px; border-radius: 14px; background: #fdecea; display: flex; align-items: center; justify-content: center; font-size: 34px; }
+</style></head>
+<body><div class="wrap">
+  <div class="brand"><img src="../../../icons/icon128.png" alt="">Price Softener</div>
+  <h1>Gift them the phone, <em>not the price shock.</em></h1>
+  <p class="lead">Softer prices while you shop with family on Indian stores. The real price at checkout, always.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="mini"><div class="phone"><div class="screen"></div></div></div>
+      <div><div class="label">What they see</div><div class="amt" style="color:var(--green)">₹73,999</div></div>
+      <span class="badge soft">Product page</span>
+    </div>
+    <div class="card">
+      <div class="ico">🧾</div>
+      <div><div class="label">What you pay</div><div class="amt" style="color:var(--red)">₹1,29,999</div></div>
+      <span class="badge real">Checkout</span>
+    </div>
+  </div>
+</div></body></html>
